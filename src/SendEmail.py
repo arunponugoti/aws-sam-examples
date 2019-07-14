@@ -6,8 +6,8 @@ from botocore.exceptions import ClientError
 
 def lambda_handler(event, context):
 
-    email_from = 'test@googlemail.com'
-    email_to = 'aruncrit@gmail.com'
+    email_from = 'aruncrit@gmail.com'
+    email_to = 'arunponugoti18@gmail.com'
     
     requestData = event
     if 'body' in event:
