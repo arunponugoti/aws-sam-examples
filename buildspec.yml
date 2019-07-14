@@ -16,8 +16,8 @@ phases:
 
   build:
     commands:
-      - aws cloudformation package --template-file template.yaml --s3-bucket $S3_BUCKET --output-template-file serverless-output.yaml
-      - aws cloudformation deploy --template-file ./serverless-output.yaml --stack-name $S3_BUCKET --capabilities=CAPABILITY_IAM
+      - aws cloudformation package --template template.yaml --s3-bucket $S3_BUCKET --output-template serverless-output.yaml
+      - aws cloudformation deploy --template ./serverless-output.yaml --stack-name $S3_BUCKET --capabilities=CAPABILITY_IAM
 
 artifacts:
   type: zip
