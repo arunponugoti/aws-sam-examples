@@ -4,7 +4,7 @@ import json
 
 def lambda_handler(event, context):
     print("Event Passed to Handler: " + json.dumps(event)) 
-    name = 'world'
+    name = 'world version1'
     if event['queryStringParameters'] is not None:
       name = event['queryStringParameters']['name']
 
