@@ -6,8 +6,8 @@ from botocore.exceptions import ClientError
 
 def lambda_handler(event, context):
 
-    email_from = 'andrejmaya@googlemail.com'
-    email_to = 'info@mayasoft.de'
+    email_from = 'test@googlemail.com'
+    email_to = 'aruncrit@gmail.com'
     
     requestData = event
     if 'body' in event:
@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     requestData = json.dumps(requestData)
     print(requestData)
     
-    ses = boto3.client('ses',region_name="eu-west-1")
+    ses = boto3.client('ses',region_name="us-east-1")
     # Try to send the email.
     try:
         #Provide the contents of the email.
