@@ -30,7 +30,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: SesForwarder.lambda_handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       Policies:
       - AWSLambdaExecute 
       - Version: '2012-10-17'
